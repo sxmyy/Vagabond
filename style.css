@@ -1,0 +1,134 @@
+body {
+    background-color: rgb(0, 0, 0);
+  }
+
+/*   Scroll Bar   */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 0, 0);
+  }
+
+
+  @font-face {
+    font-family: rdr2font;
+    src: url("fonts/Goudy\ Old\ Style\ Regular.ttf") format("truetype");
+  }
+
+/*   Nav   */
+  a {
+    color: #000000;
+    text-decoration: none;
+    transition: 0.5s;
+    text-shadow: 0 0 3px rgb(0, 0, 0);
+  }
+  
+  a:hover {
+    opacity: 0.7;
+    color: red;
+    text-shadow: 0 0 3px red;
+  }
+  
+  .logo {
+    position: absolute;
+    left: 20px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 
+    system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    background: #ffffff;
+    height: 10vh;
+    font-family: rdr2font;
+    font-size: 23;
+  }
+  
+  main {
+    background: url("img/musashi_wallpaper_6.png") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-list li {
+    letter-spacing: 2px;
+    margin-left: 32px;
+  }
+
+/*   Mobile Nav List   */
+  .mobile-menu {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+  }
+  
+  @media (max-width: 999px) {
+    body {
+      overflow-x: hidden;
+    }
+    .nav-list {
+      position: absolute;
+      top: 8vh;
+      right: 0;
+      width: 50vw;
+      height: 92vh;
+      background: #000000;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in;    height: 120vh;
+    }
+    .nav-list li {
+      margin-left: 0;
+      opacity: 0;
+    }
+    .mobile-menu {
+      display: block;
+    }
+  }
+  
+  .nav-list.active {
+    transform: translateX(0);
+  }
+
+/*   Mobile Nav List Animação   */
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+  }
+  
+  .mobile-menu.active .line2 {
+    opacity: 0;
+  }
+  
+  .mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+  }
