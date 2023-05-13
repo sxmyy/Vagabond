@@ -1,8 +1,10 @@
+/*---Body---*/
 body {
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0);
   }
+/*---Body---*/
 
-/*   Scroll Bar   */
+/*---Scroll Bar---*/
   ::-webkit-scrollbar {
     width: 6px;
   }
@@ -10,30 +12,42 @@ body {
   ::-webkit-scrollbar-thumb {
     background-color: rgb(0, 0, 0);
   }
+/*===Scroll Bar===*/
 
-
+/*---fonts---*/
   @font-face {
-    font-family: rdr2font;
+    font-family: "font1";
     src: url("fonts/Goudy\ Old\ Style\ Regular.ttf") format("truetype");
   }
 
-/*   Nav   */
+  @font-face {
+    font-family: "font2";
+    src: url("fonts/Fujimaru-Regular.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "font3";
+    src: url("fonts/Hogback\ Demo\ Version.otf") format("opentype");
+  }
+/*===fonts===*/
+
+/*---Nav---*/
   a {
     color: #000000;
     text-decoration: none;
     transition: 0.5s;
-    text-shadow: 0 0 3px rgb(0, 0, 0);
+    text-shadow: 0 0 3px #858585;
   }
   
   a:hover {
     opacity: 0.7;
-    color: red;
-    text-shadow: 0 0 3px red;
+    color: rgb(161, 161, 161);
+    text-shadow: 0 0 3px rgb(110, 110, 110);
   }
   
   .logo {
     position: absolute;
-    left: 20px;
+    left: 50px;
   }
   
   nav {
@@ -42,14 +56,15 @@ body {
     align-items: center;
     font-family: 
     system-ui, -apple-system, Helvetica, Arial, sans-serif;
-    background: #ffffff;
+    background: transparent;
     height: 10vh;
-    font-family: rdr2font;
-    font-size: 23;
+    font-family: "font3";
+    font-size: 32px;
+    font-weight: bold;
   }
   
   main {
-    background: url("img/musashi_wallpaper_6.png") no-repeat center center;
+    background: url("img/musashi_wallpaper_paisagem_1.jpg") no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;
@@ -64,8 +79,9 @@ body {
     letter-spacing: 2px;
     margin-left: 32px;
   }
+/*===Nav===*/  
 
-/*   Mobile Nav List   */
+/*---Mobile Nav List---*/
   .mobile-menu {
     display: none;
     cursor: pointer;
@@ -108,8 +124,9 @@ body {
   .nav-list.active {
     transform: translateX(0);
   }
+/*===Mobile Nav List===*/
 
-/*   Mobile Nav List Animação   */
+/*---Mobile Nav List Animação---*/
   @keyframes navLinkFade {
     from {
       opacity: 0;
@@ -132,3 +149,17 @@ body {
   .mobile-menu.active .line3 {
     transform: rotate(45deg) translate(-5px, -7px);
   }
+/*===Mobile Nav List Animação===*/
+
+/*---Miyamoto Musashi Png---*/
+  .musashipng {
+    position: absolute;
+    top: 167px;
+    left: -100px;
+    transition: 0.6s;
+  }
+
+  .musashipng:hover {
+    transform: scale(1.1);
+  }
+/*===Miyamoto Musashi Png===*/
