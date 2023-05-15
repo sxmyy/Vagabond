@@ -4,6 +4,10 @@ body {
   }
 /*---Body---*/
 
+cor {
+  color: white;
+}
+
 /*---Scroll Bar---*/
   ::-webkit-scrollbar {
     width: 6px;
@@ -28,6 +32,11 @@ body {
   @font-face {
     font-family: "font3";
     src: url("fonts/Hogback\ Demo\ Version.otf") format("opentype");
+  }
+
+  @font-face {
+    font-family: "font4";
+    src: url("fonts/mangat.ttf") format("truetype");
   }
 /*===fonts===*/
 
@@ -54,12 +63,10 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-family: 
-    system-ui, -apple-system, Helvetica, Arial, sans-serif;
     background: transparent;
     height: 10vh;
-    font-family: "font3";
-    font-size: 32px;
+    font-family: "font4";
+    font-size: 25px;
     font-weight: bold;
   }
   
@@ -163,3 +170,23 @@ body {
     transform: scale(1.1);
   }
 /*===Miyamoto Musashi Png===*/
+
+.texto_all {
+  position: absolute;
+  top: 412px;
+  left: 972px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "font4";
+  font-weight: bold;
+}
+
+.texto_1 {
+  color: #000000;
+  width: 600px;
+  font-size: 19px;
+  text-shadow: 0 0 2px #000000;
+  text-align: center;
+}
