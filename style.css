@@ -7,7 +7,7 @@ body {
 /*---Cor Sublinhado---*/
 cor {
   color: white;
-  text-shadow: 5px 5px 5px #000000;
+  text-shadow: 3px 2px 1px #000000;
 }
 /*===Cor Sublinhado===*/
 
@@ -177,8 +177,8 @@ cor {
 /*---Texto Ínicio---*/
 .texto_all {
   position: absolute;
-  top: 412px;
-  left: 972px;
+  top: 430px;
+  left: 905px;
   display: flex;
   align-items: center;
   justify-content: center;
