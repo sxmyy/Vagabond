@@ -185,6 +185,7 @@ cor {
   flex-direction: column;
   font-family: "font4";
   font-weight: bold;
+  line-height: 1.4;
 }
 
 .texto_1 {
